@@ -7,7 +7,7 @@ setuptools.setup(
     name="ipvalidator",
     version="1.0.0",
     author="helloworld1008",
-    author_email="rsharma1818@outlook.com",
+    author_email="rsharma181818@outlook.com",
     description="IPvalidator is a python library that validates unicast IP addresses",
     long_description=long_description,
     long_description_content_type="text/markdown",

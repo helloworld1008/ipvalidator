@@ -6,3 +6,7 @@ IPValidator is a python module that validates IP addresses in IPAM applications.
 - It catches a wide variety of errors that can occur when entering an invalid IP address and raises appropriate exceptions
 - Can be used in any python-based frameworks such as Django, Flask, etc.
 
+## Requirements
+
+- Python (3.6 & above)
+- Pip

@@ -34,7 +34,7 @@ The output to stdout is
 (True, '192.168.10.0', '192.168.10.255')
 ```
 
-Shown below is an example of calling IpValidator constructor on an invalid IP address from the python shell
+Shown below are examples of calling IpValidator constructor on an invalid IP address from the python shell
 ```bash
 ip = ipvalidator.IpValidator('300.168.10.1/24')
 ```

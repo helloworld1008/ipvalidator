@@ -50,7 +50,7 @@ Traceback (most recent call last):
 ipvalidator.IpValidationError: The first octet must be between 1 to 223
 ```
 
-
+If you enter an IP address with an invalid octet
 ```bash
 ip = ipvalidator.IpValidator('192.168.10.300/24')
 ```

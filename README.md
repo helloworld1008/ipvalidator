@@ -65,3 +65,20 @@ Traceback (most recent call last):
     raise IpValidationError("Octet value must be between 0 to 255")
 ipvalidator.IpValidationError: Octet value must be between 0 to 255
 ```
+
+If you enter an IP address with an invalid subnet mask
+```bash
+ip = ipvalidator.IpValidator('192.168.10.100/34')
+```
+
+The output to stderr is 
+```bash
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/Scripts/packaging_folder/ipvalidator/ipvalidator.py", line 24, in __init__
+    self.check_subnet_mask()
+  File "/root/Scripts/packaging_folder/ipvalidator/ipvalidator.py", line 96, in check_subnet_mask
+    raise IpValidationError("Subnet mask must be between 8 to 30")
+ipvalidator.IpValidationError: Subnet mask must be between 8 to 30
+```
+

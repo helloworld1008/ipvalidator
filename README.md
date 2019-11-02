@@ -50,3 +50,17 @@ Traceback (most recent call last):
 ipvalidator.IpValidationError: The first octet must be between 1 to 223
 ```
 
+```bash
+>>> ip = ipvalidator.IpValidator('192.168.10.300/24')
+```
+
+The output to stderr is 
+```bash
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/Scripts/packaging_folder/ipvalidator/ipvalidator.py", line 20, in __init__
+    self.check_all_octets()
+  File "/root/Scripts/packaging_folder/ipvalidator/ipvalidator.py", line 65, in check_all_octets
+    raise IpValidationError("Octet value must be between 0 to 255")
+ipvalidator.IpValidationError: Octet value must be between 0 to 255
+```
